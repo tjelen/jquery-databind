@@ -12,7 +12,7 @@
 (function (jQuery) {
   var messageRegExp = /([a-zA-Z,\.\-_\/]+)(?:\(([^)]+)\))?$/
   
-  $.fn.databind = function (publish, events) {
+  $.fn.databind = function (hub, events) {
     hub = hub || $(document)
     events = events || "click mousemove"
     
